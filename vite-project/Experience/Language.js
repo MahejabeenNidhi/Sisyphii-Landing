@@ -15,6 +15,7 @@ export default class Language extends EventEmitter {
         this.toggleButtonLang.addEventListener("click", () => {
             this.toggleCircleLang.classList.toggle("slide");
             // console.log(this.theme);
+
         });
     }
 }
