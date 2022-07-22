@@ -230,6 +230,51 @@ svg{
   left: 31px;
 }
 
+.en-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.cn-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text);
+  font-weight:bolder;
+}
+
+.toggle-bar-language{
+  position: fixed;
+  display: flex;
+  opacity: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 100px;
+  right: 55px;
+  z-index: 99999999999999;
+}
+
+.toggle-button-language{
+  cursor: pointer;
+  position: relative;
+  width: 56px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-pink);
+  border-radius: 999px;
+  margin: 0px 16px;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 /* Section Formatting --------------------------------------------- */
 .section-margin{
   height: 3000px;
