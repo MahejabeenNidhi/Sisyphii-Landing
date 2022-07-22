@@ -22,13 +22,13 @@ export default class Language extends EventEmitter {
             var chineseTags = document.querySelectorAll(".zh");
 
             if (this.language === "en") {
-                document.querySelector(".intro-text").innerHTML = "Imagine Animals Happy!";
+                
                 for (let i=0; i<englishTags.length; i++) {
                     englishTags[i].style.display="block";
                     chineseTags[i].style.display="none";
                 }
             } else {
-                document.querySelector(".intro-text").innerHTML = "Lorem ipsum dolor!"
+        
                 for (let i=0; i<englishTags.length; i++) {
                     englishTags[i].style.display="none";
                     chineseTags[i].style.display="block";
