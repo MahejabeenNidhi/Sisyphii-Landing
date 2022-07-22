@@ -67,6 +67,11 @@ svg{
 .hidden{
   display: none;
 }
+/*Chinese language*/
+
+.zh {
+  display: none;
+}
 
 /* Preloader */
 .preloader{

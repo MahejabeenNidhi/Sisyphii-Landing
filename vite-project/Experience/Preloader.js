@@ -98,7 +98,15 @@ export default class Preloader extends EventEmitter {
                         onComplete: resolve,
                     },
                     "same"
-                );
+                )
+                .to(
+                    ".toggle-bar-language",
+                    {
+                        opacity: 1,
+                        onComplete: resolve,
+                    },
+                    "same"
+                )
         });
     }
 
