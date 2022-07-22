@@ -176,10 +176,10 @@ svg{
 }
 
 /* Toggle Bar --------------------------------------------- */
-.toggle-bar{
+.toggle-bar, .toggle-bar-language{
   position: fixed;
   display: flex;
-  opacity: 0;
+  opacity: 1;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -187,80 +187,29 @@ svg{
   right: 48px;
   z-index: 99999999999999;
 }
+.toggle-bar-language{
+  top: 100px;
+  right: 54px;
+}
 
 .sun-wrapper, 
-.moon-wrapper{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: var(--color-text);
-}
-
-.toggle-button{
-  cursor: pointer;
-  position: relative;
-  width: 56px;
-  height: 28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color-pink);
-  border-radius: 999px;
-  margin: 0px 16px;
-  border: none;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.toggle-circle{
-  position: absolute;
-  left: 6px;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  background-color: var(--color-background);
-  transition: all 0.2s ease-in-out;
-}
-
-.toggle-button:hover .toggle-circle{
-  transform: scale(0.9);
-}
-
-.slide{
-  left: 31px;
-}
-
-.en-wrapper{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: var(--color-text);
-  font-weight: 500;
-}
-
+.moon-wrapper,
+.en-wrapper,
 .cn-wrapper{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   color: var(--color-text);
+}
+.en-wrapper{
+  font-weight: 500;
+}
+.cn-wrapper{
   font-weight:bolder;
 }
 
-.toggle-bar-language{
-  position: fixed;
-  display: flex;
-  opacity: 1;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  top: 100px;
-  right: 55px;
-  z-index: 99999999999999;
-}
-
-.toggle-button-language{
+.toggle-button, .toggle-button-language{
   cursor: pointer;
   position: relative;
   width: 56px;
@@ -273,6 +222,24 @@ svg{
   margin: 0px 16px;
   border: none;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.toggle-circle, .toggle-circle-language{
+  position: absolute;
+  left: 6px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-background);
+  transition: all 0.5s ease-in-out;
+}
+
+.toggle-button:hover .toggle-circle, .toggle-button-language:hover .toggle-circle-language{
+  transform: scale(0.9);
+}
+
+.slide{
+  left: 31px;
 }
 
 /* Section Formatting --------------------------------------------- */
