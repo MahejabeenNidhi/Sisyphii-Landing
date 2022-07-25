@@ -380,7 +380,7 @@ svg{
 
 .section-title-text{
   display: block;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 500;
   transform-origin: left;
   transform: skewY(25deg);
@@ -393,10 +393,10 @@ svg{
   display: block;
   font-size: 40px;
   font-weight: 500;
-  padding: 5;
-  padding-left: 5;
-  padding-right: 5;
+  padding: 10px 25px;
   line-height: 200%;
+  border-radius: 10px;
+  border: none;
 }
 
 .styleOne,
@@ -536,5 +536,13 @@ svg{
   .hero-second-subheading{
     font-size: 18px;
   }
+  .section-title-input {
+    line-height: 200%;
+    width: 75vw;
+    margin: 10px;
+    font-size: 25px;
+  }
+  .section-heading {
+    font-size: 20px;
+  }
 }
-
