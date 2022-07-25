@@ -88,21 +88,6 @@ export default class Preloader extends EventEmitter {
                     ".arrow-svg-wrapper",
                     {
                         opacity: 1,
-                    },
-                    "same"
-                )
-                .to(
-                    ".toggle-bar",
-                    {
-                        opacity: 1,
-                        onComplete: resolve,
-                    },
-                    "same"
-                )
-                .to(
-                    ".toggle-bar-language",
-                    {
-                        opacity: 1,
                         onComplete: resolve,
                     },
                     "same"
@@ -115,6 +100,20 @@ export default class Preloader extends EventEmitter {
             this.secondTimeline = new GSAP.timeline();
 
             this.secondTimeline
+                .to(
+                    ".toggle-bar",
+                    {
+                        visibility: 'visible',
+                    },
+                    "same"
+                )
+                .to(
+                    ".toggle-bar-language",
+                    {
+                        visibility: 'visible',
+                    },
+                    "same"
+                )
                 .to(
                     ".intro-text .animatedis",
                     {
@@ -333,10 +332,12 @@ export default class Preloader extends EventEmitter {
                     },
                     "chair"
                 )
-                .to(".arrow-svg-wrapper", {
-                    opacity: 1,
-                    onComplete: resolve,
-                });
+                .to(".arrow-svg-wrapper", 
+                    {
+                        opacity: 1,
+                        onComplete: resolve,
+                    }
+                )
         });
     }
 

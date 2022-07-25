@@ -181,10 +181,11 @@ svg{
 }
 
 /* Toggle Bar --------------------------------------------- */
+
 .toggle-bar{
   position: fixed;
   display: flex;
-  opacity: 0;
+  visibility:hidden;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -260,7 +261,7 @@ svg{
 .toggle-bar-language{
   position: fixed;
   display: flex;
-  opacity: 0;
+  visibility: hidden;
   flex-direction: row;
   justify-content: center;
   align-items: center;
